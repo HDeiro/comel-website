@@ -1,5 +1,5 @@
 function startCountdown() {
-    let countDownDate = new Date("Aug 6, 2018").getTime();
+    let countDownDate = new Date("Aug 10, 2020").getTime();
     let countdownElement = document.querySelector("#countdown");
     let updateCountdown = function() {
         let evaluate = value => value < 10 ? `0${value}` : value;
@@ -21,7 +21,7 @@ function startCountdown() {
         // If the count down is finished, write some text 
         if (distance <= 0) {
             intervalControl && clearInterval(intervalControl);
-            countdownElement.innerHTML = "O evento começou! Aproveite!";
+            countdownElement.innerHTML = "Evento acontecendo! Aproveite!";
         }
     };
 
